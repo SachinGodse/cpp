@@ -1,0 +1,31 @@
+# modern-cmake-template
+
+# Ref: https://medium.com/@rvarago/introduction-to-cmake-for-cpp-4c464272a239
+
+#      https://github.com/rvarago/modern-cmake-template
+
+#      https://code.egym.de/refactoring-a-cmake-build-system-9898c2030c3a
+
+#
+
+#      https://llvm.org/docs/CMakePrimer.html   LLVM CMake Primer¶
+
+#
+
+#      https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1   Effective Modern CMake   *****
+
+#      https://www.youtube.com/watch?v=bsXLMQ6WgIk&feature=youtu.be&t=50m30s   YouTube Talk
+
+#      https://www.youtube.com/watch?v=eC9-iRN2b04  CppCon 2017: Mathieu Ropert “Using Modern CMake Patterns to Enforce a Good Modular Design”
+
+#        
+
+#      https://www.youtube.com/watch?v=HPMvU64RUTY  C++ Weekly - Ep 78 - Intro to CMake  // C++=14 Lamda fun
+
+#      https://www.youtube.com/watch?v=YbgH7yat-Jo  C++ Weekly - Ep 208 - The Ultimate CMake / C++ Quick Start
+
+#      https://github.com/lefticus/cpp_starter_project  cpp_starter_project
+
+#      https://www.youtube.com/watch?v=y9kSr5enrSk  Oh No! More Modern CMake - Deniz Bahadir - Meeting C++ 2019  *****
+
+#      https://www.youtube.com/watch?v=m0DwB4OvDXk  Deep CMake for Library Authors - Craig Scott - CppCon 2019

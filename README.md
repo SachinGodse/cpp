@@ -1,7 +1,7 @@
 # Modern CMake Template
 
 > Template for projects based on modern CMake practices.
-
+```
 Components:
 ├── app
 │   ├── CMakeLists.txt
@@ -25,7 +25,7 @@ Components:
 ├── Makefile
 └── README.md
 
-
+```
 See [How to Use Modern CMake for an App + Lib Project](https://rvarago.github.io/2018/08/20/how-to-use-modern-cmake-for-an-app-p-lib-project.html) for more information.
 
 ## Usage

@@ -3,10 +3,28 @@
 > Template for projects based on modern CMake practices.
 
 Components:
+├── app
+│   ├── CMakeLists.txt
+│   └── main.cpp
+├── azure-pipelines.yml
+├── CMakeLists.txt
+├── libs
+│   ├── CMakeLists.txt
+│   └── lib1
+│       ├── CMakeLists.txt
+│       ├── include
+│       │   └── lib1
+│       │       └── lib1-pub-header.h
+│       ├── lib1-priv-header.h
+│       ├── lib1-priv-impl.cpp
+│       ├── lib1-pub-impl.cpp
+│       └── tests
+│           ├── CMakeLists.txt
+│           └── main.cpp
+├── LICENSE
+├── Makefile
+└── README.md
 
-- `app`.
-- `libs/lib1`.
-- `libs/lib1/tests`.
 
 See [How to Use Modern CMake for an App + Lib Project](https://rvarago.github.io/2018/08/20/how-to-use-modern-cmake-for-an-app-p-lib-project.html) for more information.
 

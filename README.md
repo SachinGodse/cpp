@@ -1,4 +1,4 @@
-# Modern CMake Template
+# CMake Template
 
 > Template for projects based on modern CMake practices.
   
@@ -33,7 +33,8 @@ See [How to Use Modern CMake for an App + Lib Project](https://rvarago.github.io
 Create the `build` directory and configure the build system:
 
 ```bash
-cmake -B build # Or `cmake -D BUILD_TESTING=OFF -B build` to skip tests. 
+cmake -B build # Or 
+cmake -D BUILD_TESTING=OFF -B build  #  to skip tests. 
 ```
 
 Build the project:

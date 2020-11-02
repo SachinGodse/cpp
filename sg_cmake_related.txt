@@ -1,5 +1,51 @@
 # modern-cmake-template
 
+# cmake_format 	
+https://github.com/cheshirekow/cmake_format
+
+# LLVM-based tools
+
+$ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .
+
+CMake now also comes with built-in support for calling clang-tidy during normal compilation.
+
+	include-what-you-use, example results		
+
+		https://github.com/include-what-you-use/include-what-you-use
+		https://github.com/ChaiScript/ChaiScript/commit/c0bf6ee99dac14a19530179874f6c95255fde173
+		
+	clang-modernize, example results
+
+		http://clang.llvm.org/extra/clang-modernize.html
+		https://github.com/ChaiScript/ChaiScript/commit/6eab8ddfe154a4ebbe956a5165b390ee700fae1b
+
+	clang-check
+
+		http://clang.llvm.org/docs/ClangCheck.html
+		
+	clang-tidy
+
+		http://clang.llvm.org/extra/clang-tidy.html
+
+
+# Clang's Static Analyzer
+
+Clang's analyzer's default options are good for the respective platform. It can be used directly from CMake. They can also be called via clang-check and clang-tidy from the LLVM-based Tools. 
+	https://lefticus.gitbooks.io/cpp-best-practices/content/02-Use_the_Tools_Available.html#llvm-based-tools
+
+Also, CodeChecker is available as a front-end to clang's static analysis.
+	https://github.com/Ericsson/CodeChecker
+	
+clang-tidy can be easily used with Visual Studio via the Clang Power Tools extension. https://clangpowertools.com/
+ 
+
+
+
+# coverity
+
+	https://scan.coverity.com/
+	
+
 # Ref: https://medium.com/@rvarago/introduction-to-cmake-for-cpp-4c464272a239
 
       https://github.com/rvarago/modern-cmake-template
@@ -22,3 +68,43 @@
       https://www.youtube.com/watch?v=y9kSr5enrSk  Oh No! More Modern CMake - Deniz Bahadir - Meeting C++ 2019  *****
 
       https://www.youtube.com/watch?v=m0DwB4OvDXk  Deep CMake for Library Authors - Craig Scott - CppCon 2019
+      
+
+#[==[  Multiline comment in CMake
+
+	ref: https://www.youtube.com/watch?v=bsXLMQ6WgIk	“Effective CMake"
+	
+	cmake -B build
+	cmake --build build
+
+	set(user s)
+	message(STATUS "hello, ${user}") 
+
+	imagine Targets as objects
+	
+		Constructors	
+			add_executable()
+			add_library()	
+			
+		Member variables
+			..too many
+		
+		Member functions
+			get_target_property()
+			set_target_properties()
+			target_compile_definations()
+			target_compile_features()
+			target_compile_options()
+			target_include_directories()
+			target_link_libraries()	# direct depedencies
+			target_sources()
+		
+	add_library(Bar INTERFACE)
+	target_compile_definations(Bar INTERFACE BAR=1)	
+				
+	find_package(Foo 2.0 REQUIRED)
+	#
+	target_link_libraries(... Foo::Foo ...)	
+#]==]
+
+      
